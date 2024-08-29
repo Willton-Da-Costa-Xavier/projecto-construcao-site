@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css" media="screen">
 
     <!-- Link da fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +16,7 @@
 
     <!-- Script do javascript -->
     <script  src="JS/script.js" defer></script>
+    <script src="JS/btn-menu-mob.js" defer></script>
 
     <title>Website</title>
 </head>
@@ -46,6 +48,23 @@
                 <a href="#">
                     <button>Contacto</button>
                 </a>
+            </section>
+
+            <div class="btn-menu-mob" id="btn-menu-mob">
+                <div class="line-menu-mob-1"></div>
+                <div class="line-menu-mob-2"></div>
+            </div>
+
+            <section class="menu-mobile" id="menu-mobile">
+                <!-- Utilizamos a taga <nav> e as tags de listas para o menu -->
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Destinos</a></li>
+                        <li><a href="#">Hoteis</a></li>
+                        <li><a href="#">Passagens</a></li>
+                    </ul>
+                </nav>
             </section>
 
         </div>
@@ -85,11 +104,11 @@
 
             <article class="itens-container">
 
-                <div class="img-itens">
+                <div class="img-itens item-1">
                     <img src="img/carro.png" alt="">
                 </div>
 
-                <div class="txt-itens">
+                <div class="txt-itens item-2">
                     <h3><span>Os </span> melhores  <br>destinos</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorum molestiae, nulla libero, saepe natus perferendis totam error, nihil aperiam assumenda atque. Maxime esse quasi consequuntur necessitatibus dolor magni ipsa?</p>
                 </div>
