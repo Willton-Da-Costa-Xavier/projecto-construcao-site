@@ -4,19 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Link da fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Link dos icons da bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Script do javascript -->
+    <script  src="JS/script.js" defer></script>
+
     <title>Website</title>
 </head>
 <body>
     <!-- Utilizamos a tag <header> para configurar o cabecalho -->
-   <header>
+   <header id="header">
         <!-- Utilizamos uma div para configurar os items do header -->
         <div class="interface">
             <!-- criamos uma seccao para o logo -->
             <section class="logo">
-                <img src="img/logotipo.png" alt="Logotipo do site">
+                <img class="logo-branca" src="img/logotipo.png" alt="Logotipo do site">
+
+                <img class="logo-preta" src="img/logotipo_p.png" alt="Logotipo do site">
             </section>
             <!-- Criamos uma seccao para o menu -->
             <section class="menu-desk">
@@ -38,6 +49,227 @@
             </section>
 
         </div>
-   </header> 
+   </header>
+   <!-- Seccao do texto e da imagem -->
+    <section class="hero-site">
+        <!-- container do tetxo e butao -->
+        <div class="interface">
+            <!-- div do texto -->
+            <div class="txt-hero">
+                <h1>Descubra um <span>novo mundo</span></h1>
+                <p>Enxontre destinos que ficarao para sempre em sua memoria <span>com um orcamento que cabe no seu bolso</span></p>
+                <a href="#">
+                    <button>Quero conhecer</button>
+                </a>
+            </div>
+        </div>
+     
+    </section>
+
+    <!-- Seccao onde ficara as vantagens -->
+    <section class="vantagens">
+        <!-- container do container de tetxo e imagens -->
+        <div class="interface">
+            <!-- container do texto e imagens -->
+            <article class="itens-container">
+                <!-- Container do texto -->
+                <div class="txt-itens">
+                    <h3><span>Viaje</span> com  <br>conforto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorum molestiae, nulla libero, saepe natus perferendis totam error, nihil aperiam assumenda atque. Maxime esse quasi consequuntur necessitatibus dolor magni ipsa?</p>
+                </div>
+                <!-- Container de imagem -->
+                <div class="img-itens">
+                    <img src="img/aviao.png" alt="">
+                </div>
+            </article>
+
+            <article class="itens-container">
+
+                <div class="img-itens">
+                    <img src="img/carro.png" alt="">
+                </div>
+
+                <div class="txt-itens">
+                    <h3><span>Os </span> melhores  <br>destinos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorum molestiae, nulla libero, saepe natus perferendis totam error, nihil aperiam assumenda atque. Maxime esse quasi consequuntur necessitatibus dolor magni ipsa?</p>
+                </div>
+
+                
+            </article>
+
+            <article class="itens-container">
+                <div class="txt-itens">
+                    <h3><span>Os</span> melhores <br>hoteis</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorum molestiae, nulla libero, saepe natus perferendis totam error, nihil aperiam assumenda atque. Maxime esse quasi consequuntur necessitatibus dolor magni ipsa?</p>
+                </div>
+
+                <div class="img-itens">
+                    <img src="img/hoteis.png" alt="">
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Seccao do contacto -->
+    <section class="contacto">
+        <!-- Container do container dos botoes e icons e texto -->
+        <div class="interface">
+            <!-- container do texto -->
+           <article class="txt-contacto">
+                <h3>Fale agora com a <span>nossa equipe</span></h3>
+                <p>E solicite um orcamneto que cabe no seu bolso</p>
+           </article>
+           <!-- container dos botoes e icons do contacto -->
+           <article class="icons-contacto">
+                <!-- butao do contacto com os icons -->
+                <a href="#">
+                    <button><i class="bi bi-whatsapp"></i> <p>Chamar no Whatsapp</p></button>
+                </a>
+                <a href="#">
+                    <button><i class="bi bi-envelope-at-fill"></i><p>Enviar e-mail</p></button>
+                </a>
+                <a href="#">
+                    <button><i class="bi bi-telephone-fill"></i><p>Ligar</p></button>
+                </a>
+                <a href="#">
+                    <button><i class="bi bi-ui-checks"></i><p>Formulario</p></button>
+                </a>
+           </article>
+        </div>
+    </section>
+
+    <!-- Seccao do hotel -->
+    <section class="hoteis">
+        <!-- container  -->
+        <div class="interface">
+            <h3>Hospedagem? <span>Deixa com a gente</span></h3>
+            <p>Os melhores hoteis e possadas para o maximo de conforto para voce e sua familia</p>
+            <!-- botao  -->
+            <a href="#">
+                <button>Conheca os nossos hoteis</button>
+            </a>
+        </div>
+
+        <!-- div para aplicar o overlay -->
+        <div class="overlay">
+
+        </div>
+    </section>
+
+    <!-- Seccao de como funciona -->
+    <section class="como-funciona">
+        <!-- container -->
+        <div class="interface">
+            <!-- Texto de como funciona -->
+            <div class="txt-funciona">
+                <h3>Como <span>Funciona?</span></h3>
+            </div>
+            <!-- container das instrucoes -->
+            <div class="instrucoes">
+                <!-- caixa onde ficarao as imagens e texto -->
+                <article class="instru-box">
+                    <!-- container da imagem -->
+                    <div class="img-instru-box">
+                        <img src="img/atendimento-ao-cliente.png" alt="">
+                    </div>
+
+                    <!-- container do texto -->
+                    <div class="txt-intru-box">
+                        <h4>Voce <span>fala com a gente</span></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique tempore sit.</p>
+                    </div>
+                </article>
+
+                <article class="instru-box">
+                    <!-- container da imagem -->
+                    <div class="img-instru-box">
+                        <img src="img/planejamento.png" alt="">
+                    </div>
+
+                    <!-- container do texto -->
+                    <div class="txt-intru-box">
+                        <h4>A gente <span>planeja</span></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique tempore sit.</p>
+                    </div>
+                </article>
+
+                <article class="instru-box">
+                    <!-- container da imagem -->
+                    <div class="img-instru-box">
+                        <img src="img/viagem.png" alt="">
+                    </div>
+
+                    <!-- container do texto -->
+                    <div class="txt-intru-box">
+                        <h4>Partiu <span>viajar</span></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique tempore sit, quaerat.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccao do contacto -->
+    <section class="contacto">
+        <!-- Container do container dos botoes e icons e texto -->
+        <div class="interface">
+            <!-- container do texto -->
+           <article class="txt-contacto">
+                <h3>Fale agora com a <span>nossa equipe</span></h3>
+                <p>E solicite um orcamneto que cabe no seu bolso</p>
+           </article>
+           <!-- container dos botoes e icons do contacto -->
+           <article class="icons-contacto">
+                <!-- butao do contacto com os icons -->
+                <a href="#">
+                    <button><i class="bi bi-whatsapp"></i> <p>Chamar no Whatsapp</p></button>
+                </a>
+                <a href="#">
+                    <button><i class="bi bi-envelope-at-fill"></i><p>Enviar e-mail</p></button>
+                </a>
+                <a href="#">
+                    <button><i class="bi bi-telephone-fill"></i><p>Ligar</p></button>
+                </a>
+                <a href="#">
+                    <button><i class="bi bi-ui-checks"></i><p>Formulario</p></button>
+                </a>
+           </article>
+        </div>
+    </section>
+
+    <!-- Rodape -->
+    <footer>
+        <!-- Container -->
+        <div class="interface">
+            <!-- seccao do top do footer que ficarao as redes sociais -->
+            <section class="top-footer">
+                <a href="#">
+                    <button><i class="bi bi-instagram"></i></button>
+                </a>
+
+                <a href="#">
+                    <button><i class="bi bi-facebook"></i></button>
+                </a>
+
+                <a href="#">
+                    <button><i class="bi bi-tiktok"></i></button>
+                </a>
+            </section>
+            
+            <!-- Seccao do meio que ficara os textos de ajuda, etc... -->
+            <section class="middle-footer">
+                <a href="#">Supporte</a>
+                <a href="#">Informacoes</a>
+                <a href="#">Marketing</a>
+
+            </section>
+
+            <!-- Seccao de baixo que tera o copyright -->
+            <section class="bottom-footer">
+                <p>TravelGo 2024 &copy; Todos od direitos reservados</p>
+            </section>
+        </div>
+    </footer>
+
 </body>
 </html>
